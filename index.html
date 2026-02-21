@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aquinas &amp; Newman — A Catholic Timeline</title>
+    <meta name="description" content="A chronological timeline of quotations from Thomas Aquinas and John Henry Newman, two pillars of Catholic thought." />
+    <link rel="icon" type="image/svg+xml" href="/simple-catholic-app/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="hero">
+        <div class="hero-portraits" aria-hidden="true">
+          <div class="portrait portrait-aquinas">
+            <svg viewBox="0 0 120 160" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <!-- Aquinas silhouette: Dominican habit with tonsure -->
+              <ellipse cx="60" cy="52" rx="28" ry="32" fill="#c8b8a2"/>
+              <circle cx="60" cy="42" r="22" fill="#d4c5b0"/>
+              <!-- tonsure suggestion -->
+              <ellipse cx="60" cy="28" rx="14" ry="8" fill="#b8a898"/>
+              <!-- Dominican habit -->
+              <path d="M20 140 Q20 100 60 90 Q100 100 100 140 Z" fill="#1a1a1a"/>
+              <!-- white scapular -->
+              <path d="M46 100 Q46 90 60 88 Q74 90 74 100 L74 140 L46 140 Z" fill="#f0ece4"/>
+              <!-- face features suggestion -->
+              <ellipse cx="52" cy="44" rx="4" ry="3" fill="#7a6a5a" opacity="0.5"/>
+              <ellipse cx="68" cy="44" rx="4" ry="3" fill="#7a6a5a" opacity="0.5"/>
+              <path d="M54 54 Q60 58 66 54" stroke="#7a6a5a" stroke-width="1.5" fill="none" opacity="0.5"/>
+            </svg>
+          </div>
+          <div class="portrait-divider" aria-hidden="true">✦</div>
+          <div class="portrait portrait-newman">
+            <svg viewBox="0 0 120 160" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <!-- Newman silhouette: cardinal robes -->
+              <ellipse cx="60" cy="52" rx="28" ry="32" fill="#c8b8a2"/>
+              <circle cx="60" cy="42" r="22" fill="#d4c5b0"/>
+              <!-- cardinal cassock -->
+              <path d="M18 155 Q18 95 60 88 Q102 95 102 155 Z" fill="#6b1e2e"/>
+              <!-- collar / pectoral cross suggestion -->
+              <rect x="54" y="90" width="12" height="2" fill="#b8960c" opacity="0.8"/>
+              <rect x="59" y="88" width="2" height="6" fill="#b8960c" opacity="0.8"/>
+              <!-- face features suggestion -->
+              <ellipse cx="52" cy="44" rx="4" ry="3" fill="#7a6a5a" opacity="0.5"/>
+              <ellipse cx="68" cy="44" rx="4" ry="3" fill="#7a6a5a" opacity="0.5"/>
+              <path d="M54 54 Q60 56 66 54" stroke="#7a6a5a" stroke-width="1.5" fill="none" opacity="0.5"/>
+            </svg>
+          </div>
+        </div>
+        <h1 class="site-title">
+          <span class="title-line">Aquinas &amp; Newman</span>
+          <span class="title-sub">A Chronicle of Catholic Thought</span>
+        </h1>
+        <p class="site-description">
+          Quotations from <strong>Thomas Aquinas</strong> (1225–1274) and <strong>John Henry Newman</strong> (1801–1890),
+          arranged in the order of their works — from the lecture halls of medieval Paris to the pulpits of Victorian England.
+        </p>
+      </div>
+    </header>
+
+    <main>
+      <div class="filter-bar" role="group" aria-label="Filter by author">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="aquinas">Aquinas</button>
+        <button class="filter-btn" data-filter="newman">Newman</button>
+      </div>
+
+      <div class="timeline" id="timeline" aria-live="polite">
+        <!-- Populated by main.js -->
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <p>A meditation on two great Catholic minds &mdash; <em>Fides et Ratio</em></p>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

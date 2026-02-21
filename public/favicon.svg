@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Background -->
+  <rect width="32" height="32" rx="4" fill="#f5f0e8"/>
+  <!-- Gold divider cross -->
+  <rect x="14.5" y="4" width="3" height="24" rx="1" fill="#b8960c"/>
+  <rect x="6" y="12" width="20" height="3" rx="1" fill="#b8960c"/>
+  <!-- Aquinas dot (blue) -->
+  <circle cx="9" cy="10" r="3" fill="#1e3a5f"/>
+  <!-- Newman dot (burgundy) -->
+  <circle cx="23" cy="10" r="3" fill="#6b1e2e"/>
+</svg>
